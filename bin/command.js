@@ -13,8 +13,8 @@ const argv = require('yargs')
 
 console.log('Running now');
 
-const main = require('./lib/main');
-const testSession = require('./lib/test-session');
+const main = require('../lib/main');
+const testSession = require('../lib/test-session');
 
 main.run({ 
     url: argv._[1],
