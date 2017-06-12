@@ -6,7 +6,7 @@ This command line tool is used to automatically reserve ticketswap.com tickets
 
 ## Install
 
-```
+```bash
 npm install ticketscoop -g
 ```
 
@@ -18,7 +18,7 @@ and retrieve the `session` value this should be supplied to the `--session` comm
 
 After you have retrieved your session id you can run the command as follows:
 
-```
+```bash
 $ ticketscoop start https://ticketswap.com/path/to/event --session <your_session_id>
 ```
 
