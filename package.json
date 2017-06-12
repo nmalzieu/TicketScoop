@@ -3,6 +3,10 @@
   "version": "1.0.3",
   "description": "TicketSwap.com auto buyer script",
   "main": "command.js",
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": "^3.0.0"
+  },
   "dependencies": {
     "blessed": "~0.1.81",
     "blessed-contrib": "~3.5.5",
