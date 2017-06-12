@@ -1,6 +1,6 @@
 {
   "name": "ticketscoop",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "command.js",
   "dependencies": {
@@ -19,7 +19,7 @@
     "mocha": "~3.4.2",
     "sinon": "~2.3.2"
   },
-  "bin":{
+  "bin": {
     "ticketscoop": "./command.js"
   },
   "scripts": {
