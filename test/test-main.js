@@ -1,3 +1,5 @@
+'use strict';
+
 const request = require('../lib/request');
 const expect = require('chai').expect;
 const fs = require('fs');
