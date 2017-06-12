@@ -1,6 +1,6 @@
 {
   "name": "ticketscoop",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "command.js",
   "dependencies": {
