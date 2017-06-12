@@ -1,7 +1,7 @@
 {
   "name": "ticketscoop",
   "version": "1.0.3",
-  "description": "",
+  "description": "TicketSwap.com auto buyer script",
   "main": "command.js",
   "dependencies": {
     "blessed": "~0.1.81",
@@ -26,5 +26,5 @@
     "test": "cd test; mocha test-main.js test-found.js test-parser.js test-request.js"
   },
   "author": "Matthisk <m@tthisk.nl> (http://matthisk.nl/)",
-  "license": "ISC"
+  "license": "bsd-3"
 }
