@@ -1,5 +1,7 @@
 # TicketScoop
 
+[![Build Status](https://travis-ci.org/matthisk/TicketScoop.svg?branch=master)](https://travis-ci.org/matthisk/TicketScoop)
+
 This command line tool is used to automatically reserve ticketswap.com tickets
 
 ## Install
