@@ -23,7 +23,7 @@
     "ticketscoop": "./bin/command.js"
   },
   "scripts": {
-    "test": "cd test; mocha ."
+    "test": "cd test; mocha test-main.js test-found.js test-parser.js test-request.js"
   },
   "author": "Matthisk <m@tthisk.nl> (http://matthisk.nl/)",
   "license": "ISC"

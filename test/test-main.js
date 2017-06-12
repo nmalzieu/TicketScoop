@@ -93,6 +93,7 @@ describe('main', () => {
 
         return main.run({
             url: 'http://google.com',
+            baseUrl: 'https://www.ticketswap.nl',
             sessionID: 'abcdefgh',
             retryPolicy: {
                 delay: [0, 0],
@@ -127,7 +128,10 @@ describe('main', () => {
 
         return main.buyIfFound(options, { found: true, parser })
             .then(() => expect.fail(),
-                  (error) => expect(error).to.be.instanceOf(errors.DepletedTicketsError));
+                  (error) => {
+                      console.error(error);
+                      expect(error).to.be.instanceOf(errors.DepletedTicketsError)
+                  });
     });
 
     it('#buyIfFound (3 no tickets available)', () => {
