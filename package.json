@@ -1,8 +1,8 @@
 {
-  "name": "autoticketswap",
+  "name": "ticketscoop",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "command.js",
   "dependencies": {
     "blessed": "~0.1.81",
     "blessed-contrib": "~3.5.5",
@@ -19,8 +19,11 @@
     "mocha": "~3.4.2",
     "sinon": "~2.3.2"
   },
+  "bin":{
+    "ticketscoop": "./command.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --recurisve test"
   },
   "author": "Matthisk <m@tthisk.nl> (http://matthisk.nl/)",
   "license": "ISC"
