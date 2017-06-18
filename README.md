@@ -22,4 +22,10 @@ After you have retrieved your session id you can run the command as follows:
 $ ticketscoop start https://ticketswap.com/path/to/event --session <your_session_id>
 ```
 
+The following options are available:
 
+```
+Options:
+  -s, --session                                                       [required]
+  -n, --amount                                                      [default: 1]
+```
