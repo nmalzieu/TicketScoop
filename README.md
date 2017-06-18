@@ -10,6 +10,10 @@ This command line tool is used to automatically reserve ticketswap.com tickets
 npm install ticketscoop -g
 ```
 
+## Requirements
+
+To run the script you should be using NodeJS version 6 or higher.
+
 ## Usage
 
 Before you can use the command you need to sign in to TicketSwap using your browser.
