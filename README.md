@@ -25,7 +25,11 @@ $ ticketscoop start https://ticketswap.com/path/to/event --session <your_session
 The following options are available:
 
 ```
+Commands:
+  start
+
 Options:
-  -s, --session                                                       [required]
-  -n, --amount                                                      [default: 1]
+  --session, -s  Session ID retrieved from your ticketswap.nl cookie  [required]
+  --amount, -n   The amount of tickets to reserve                   [default: 1]
+  --help         Show help                                             [boolean]
 ```

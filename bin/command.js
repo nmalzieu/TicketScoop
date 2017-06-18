@@ -8,15 +8,19 @@ const logger = require('../lib/logger');
 const chalk = require('chalk');
 const argv = require('yargs')
     .command('start')
-    .alias({
-        's': 'session',
-        'n': 'amount',
+    .option('session', {
+        alias: 's',
+        required: true,
+        describe: 'Session ID retrieved from your ticketswap.nl cookie',
     })
-    .default({
-        'n': 1
+    .option('amount', {
+        alias: 'n',
+        default: 1,
+        describe: 'The amount of tickets to reserve',
     })
     .demandOption('s', 'We need your session id to reserve tickets')
     .demandCommand(2)
+    .help()
     .argv;
 
 const options = { 
