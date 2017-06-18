@@ -32,7 +32,8 @@ describe('found', () => {
 
         let result = found.parseHTML({ body });
 
-        expect(result).to.have.keys(['form', 'csrf', '_endpoint']);
+        expect(result).to.have.keys(['form', 'csrf', '_endpoint', 'availableTickets']);
+        expect(result.availableTickets).to.equal(2);
         expect(result._endpoint).to.equal('/api/tickets/1248736/e59e1b32b3/thuishaven-opening-zomerseizoen/reserve');
     });
 
@@ -47,6 +48,7 @@ describe('found', () => {
 
         return found.runFound('http://google.com', {
             sessionID: 'abcdefgh',
+            amount: 1,
         }).then((result) => {
             expect(execStub.called).to.be.true;
             expect(notifierStub.called).to.be.true;
@@ -61,6 +63,9 @@ describe('found', () => {
         return found.process({
             form: {},
             csrf: '',
+            availableTickets: 2,
+        }, '', { 
+            amount: 1 
         }).then((result) => expect(result.alreadySold).to.be.true);
     });
 
@@ -80,8 +85,10 @@ describe('found', () => {
             form: formAPI,
             csrf: '',
             _endpoint: 'aap',
+            availableTickets: 2,
         }, '', {
             baseUrl: 'http://google.com/',
+            amount: 1,
         }).then((result) => {
             let arg = stub.getCall(0).args[1];
 
