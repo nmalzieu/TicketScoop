@@ -1,4 +1,5 @@
 # TicketScoop
+**TicketSwap.com auto buyer bot**
 
 [![Build Status](https://travis-ci.org/matthisk/TicketScoop.svg?branch=master)](https://travis-ci.org/matthisk/TicketScoop)
 
