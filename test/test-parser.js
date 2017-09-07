@@ -10,7 +10,7 @@ describe('Parser', () => {
     let parser;
     let options = {
         url: '',
-        baseUrl: 'https://www.ticketswap.nl',
+        baseUrl: 'https://www.ticketswap.fr',
     };
 
     beforeEach(() => {

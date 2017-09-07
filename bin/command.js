@@ -11,7 +11,7 @@ const argv = require('yargs')
     .option('session', {
         alias: 's',
         required: true,
-        describe: 'Session ID retrieved from your ticketswap.nl cookie',
+        describe: 'Session ID retrieved from your ticketswap.fr cookie',
     })
     .option('amount', {
         alias: 'n',
@@ -23,9 +23,9 @@ const argv = require('yargs')
     .help()
     .argv;
 
-const options = { 
+const options = {
     url: argv._[1],
-    baseUrl: 'https://www.ticketswap.nl',
+    baseUrl: 'https://www.ticketswap.fr',
     amount: argv['n'],
     sessionID: argv['s'],
 };

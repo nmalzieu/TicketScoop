@@ -18,7 +18,7 @@ To run the script you should be using NodeJS version 6 or higher.
 ## Usage
 
 Before you can use the command you need to sign in to TicketSwap using your browser.
-Navigate to the ticketswap website and sign in. Once signed in you need to inspect your cookies 
+Navigate to the ticketswap website and sign in. Once signed in you need to inspect your cookies
 and retrieve the `session` value this should be supplied to the `--session` command line argument.
 
 After you have retrieved your session id you can run the command as follows:
@@ -34,7 +34,7 @@ Commands:
   start
 
 Options:
-  --session, -s  Session ID retrieved from your ticketswap.nl cookie  [required]
+  --session, -s  Session ID retrieved from your ticketswap.fr cookie  [required]
   --amount, -n   The amount of tickets to reserve                   [default: 1]
   --help         Show help                                             [boolean]
 ```

@@ -12,8 +12,8 @@ const errors = require('../lib/errors');
 const testSession = require('../lib/test-session');
 
 let options = {
-    baseUrl: 'https://www.ticketswap.nl',
-    url: 'https://www.ticketswap.nl/event/thuishaven-opening-zomerseizoen/sunday/ec185f88-bad2-45f6-b7a3-31a5946bb518/190880'
+    baseUrl: 'https://www.ticketswap.fr',
+    url: 'https://www.ticketswap.fr/event/thuishaven-opening-zomerseizoen/sunday/ec185f88-bad2-45f6-b7a3-31a5946bb518/190880'
 };
 
 function readFile(...args) {
@@ -43,7 +43,7 @@ describe('main', () => {
     xit('run all', () => {
         const main = require('../lib/main');
         const body = readFile('./data/event-page.html');
-        
+
         let result = main.parse(options, { body });
     });
 
@@ -71,7 +71,7 @@ describe('main', () => {
         MyError.prototype = Object.create(Error);
 
         const stub = sandbox.stub(request, 'request');
-        
+
         stub.rejects(new MyError('NETWORK ERROR'));
 
         const main = require('../lib/main');
@@ -95,7 +95,7 @@ describe('main', () => {
 
         return main.run({
             url: 'http://google.com',
-            baseUrl: 'https://www.ticketswap.nl',
+            baseUrl: 'https://www.ticketswap.fr',
             sessionID: 'abcdefgh',
             retryPolicy: {
                 delay: [0, 0],
